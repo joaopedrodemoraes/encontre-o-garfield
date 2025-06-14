@@ -1,19 +1,27 @@
 <page id="start" bg_image="tech-bg-lab.png" bg_music="osts-vilo.mp3">
   <agent
     id="teste"
-    text="Hello World"
+    text="Ache o Garfield"
     color="white"
     x="center"
-    y="center"
-    font-size="70"
+    y="100"
+    font-size="60"
   />
-
+ <agent
+    id="intro_text"
+    text="João é um camarada que perde as coisas facilmente.Em um certo dia ele perdeu seu Garfield de pelúcia. Embarcaremos em uma jornada para achar o mini Garfield perdido de João. Clique em 'Começar' para iniciar essa aventura."
+    color="white"
+    x="center"
+    y="200"
+    font-size="24"
+    width="600"
+  />
   <agent
     id="next_page_text"
     text="Proxima Pagina"
-    animation="glitch"
+    animation="pulse"
     y="480"
-    x="640"
+    x="center"
     on_click="goToPage('middle')"
   />
 </page>
