@@ -1,0 +1,19 @@
+<page id="start" bg_image="tech-bg-lab.png" bg_music="osts-vilo.mp3">
+  <agent
+    id="teste"
+    text="Hello World"
+    color="white"
+    x="center"
+    y="center"
+    font-size="70"
+  />
+
+  <agent
+    id="next_page_text"
+    text="Proxima Pagina"
+    animation="glitch"
+    y="480"
+    x="640"
+    on_click="goToPage('middle')"
+  />
+</page>

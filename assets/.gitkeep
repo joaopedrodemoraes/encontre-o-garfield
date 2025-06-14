@@ -1,0 +1,20 @@
+# Pasta de Assets
+
+Esta pasta e destinada aos seus assets personalizados (imagens, videos, audios).
+
+## Assets do Starter-Kit
+
+O CodeFab ja inclui 178 assets pre-configurados sempre disponiveis:
+
+- Cemetery: elementos sombrios e de terror
+- Desert: cenarios aridos e aventurescos
+- Forest: elementos naturais e magicos
+- Snow: ambientes gelados e cristalinos
+- Tech: laboratorios e elementos futuristas
+- OSTs: musicas tematicas para ambientacao
+
+## Como usar
+
+1. Faca upload dos seus assets aqui
+2. Referencie pelo nome no codigo: image="meu-asset.png"
+3. Use autocomplete (Ctrl+Space) para ver assets disponiveis
