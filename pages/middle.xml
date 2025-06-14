@@ -1,11 +1,11 @@
 <page id="middle" bg_image="tech-bg-lab.png" bg_music="osts-vilo.mp3">
   <agent
-    id="teste"
-    text="Hello World Middle"
+    id="começo_da_procura"
+    text=" Clique em lugares onde o Garfield pode estar e descubra onde de fato ele está "
     color="white"
     x="center"
-    y="center"
-    font-size="70"
+    y="180"
+    font-size="17"
   />
 
   <agent
