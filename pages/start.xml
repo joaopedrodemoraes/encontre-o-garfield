@@ -9,11 +9,11 @@
   />
  <agent
     id="intro_text"
-    text="João é um camarada que perde as coisas facilmente.Em um certo dia ele perdeu seu Garfield de pelúcia. Embarcaremos em uma jornada para achar o mini Garfield perdido de João. Clique em 'Começar' para iniciar essa aventura."
+    text="João é um camarada que perde as coisas facilmente.Em um certo dia ele perdeu seu Garfield de pelúcia no seu quarto.Ajude João a encontrar o Garfield Clique em 'Começar' para iniciar essa aventura."
     color="white"
     x="center"
     y="200"
-    font-size="24"
+    font-size="20"
     width="600"
   />
   <agent
