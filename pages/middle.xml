@@ -1,6 +1,5 @@
 <page id="middle" bg_image="tech-bg-lab.png">
 
-  <!-- Texto de instrução -->
   <agent
     id="começo_da_procura"
     text="Clique em lugares onde o Garfield pode estar"
@@ -10,7 +9,6 @@
     font-size="17"
   />
 
-  <!-- Opção errada: Guarda-roupa -->
   <agent
     id="guarda"
     text="Guarda-roupa"
@@ -18,9 +16,9 @@
     y="220"
     font-size="25"
     color="white"
+    on_click=""
   />
 
-  <!-- Opção errada: Gavetas -->
   <agent
     id="gavetas"
     text="Gavetas"
@@ -28,9 +26,9 @@
     y="280"
     font-size="25"
     color="white"
+    on_click=""
   />
 
-  <!-- Opção certa: Debaixo da cama -->
   <agent
     id="cama"
     text="Debaixo da cama"
