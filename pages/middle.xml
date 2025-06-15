@@ -1,4 +1,4 @@
-<page id="middle" bg_image="tech-bg-lab.png" on_load="hideAgent('mensagem'); hideAgent('botaoContinuar'); hideAgent('next_page_text')">
+<page id="middle" bg_image="tech-bg-lab.png">
 
   <!-- Texto fixo no topo -->
   <agent
@@ -18,7 +18,7 @@
     y="220"
     font-size="25"
     color="white"
-    on_click="hideAgent('mensagem'); hideAgent('botaoContinuar'); hideAgent('next_page_text')"
+    on_click="moveAgent('mensagem', -1000, -1000); moveAgent('botaoContinuar', -1000, -1000)"
   />
 
   <!-- Gavetas -->
@@ -29,10 +29,10 @@
     y="280"
     font-size="25"
     color="white"
-    on_click="hideAgent('mensagem'); hideAgent('botaoContinuar'); hideAgent('next_page_text')"
+    on_click="moveAgent('mensagem', -1000, -1000); moveAgent('botaoContinuar', -1000, -1000)"
   />
 
-  <!-- Debaixo da cama (acerto) -->
+  <!-- Debaixo da cama (resposta certa) -->
   <agent
     id="cama"
     text="Debaixo da cama"
@@ -40,38 +40,28 @@
     y="340"
     font-size="25"
     color="white"
-    on_click="showAgent('mensagem'); showAgent('botaoContinuar'); showAgent('next_page_text')"
+    on_click="moveAgent('mensagem', 320, 400); moveAgent('botaoContinuar', 320, 460)"
   />
 
-  <!-- Mensagem que aparece só ao clicar certo -->
+  <!-- Mensagem: inicialmente fora da tela -->
   <agent
     id="mensagem"
     text="Você encontrou o Garfield!"
-    x="center"
-    y="400"
+    x="-1000"
+    y="-1000"
     font-size="22"
     color="lightgreen"
   />
 
-  <!-- Botão para continuar -->
+  <!-- Botão para continuar: inicialmente fora da tela -->
   <agent
     id="botaoContinuar"
     text="Ir para o quarto"
-    x="center"
-    y="440"
+    x="-1000"
+    y="-1000"
     font-size="30"
     color="yellow"
-    on_click="goToPage('start')"
-  />
-
-  <!-- Botão com animação para a próxima página -->
-  <agent
-    id="next_page_text"
-    text="Proxima Pagina"
-    animation="glitch"
-    y="480"
-    x="640"
-    on_click="goToPage('ending')"
+    on_click="goToPage('room')"
   />
 
 </page>
