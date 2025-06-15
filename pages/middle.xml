@@ -1,6 +1,6 @@
-<page id="middle" bg_image="tech-bg-lab.png">
+<page id="middle" bg_image="tech-bg-lab.png" on_load="hideAgent('mensagem'); hideAgent('botaoContinuar')">
 
-  <!-- Texto fixo no topo -->
+  <!-- Texto de instrução -->
   <agent
     id="começo_da_procura"
     text="Clique em lugares onde o Garfield pode estar"
@@ -10,7 +10,7 @@
     font-size="17"
   />
 
-  <!-- Guarda-roupa -->
+  <!-- Opção: Guarda-roupa -->
   <agent
     id="guarda"
     text="Guarda-roupa"
@@ -18,10 +18,10 @@
     y="220"
     font-size="25"
     color="white"
-    on_click="moveAgent('mensagem', -1000, -1000); moveAgent('botaoContinuar', -1000, -1000)"
+    on_click="hideAgent('mensagem'); hideAgent('botaoContinuar')"
   />
 
-  <!-- Gavetas -->
+  <!-- Opção: Gavetas -->
   <agent
     id="gavetas"
     text="Gavetas"
@@ -29,10 +29,10 @@
     y="280"
     font-size="25"
     color="white"
-    on_click="moveAgent('mensagem', -1000, -1000); moveAgent('botaoContinuar', -1000, -1000)"
+    on_click="hideAgent('mensagem'); hideAgent('botaoContinuar')"
   />
 
-  <!-- Debaixo da cama (resposta certa) -->
+  <!-- Opção correta: Debaixo da cama -->
   <agent
     id="cama"
     text="Debaixo da cama"
@@ -40,28 +40,28 @@
     y="340"
     font-size="25"
     color="white"
-    on_click="moveAgent('mensagem', 320, 400); moveAgent('botaoContinuar', 320, 460)"
+    on_click="showAgent('mensagem'); showAgent('botaoContinuar')"
   />
 
-  <!-- Mensagem: inicialmente fora da tela -->
+  <!-- Mensagem (inicialmente escondida) -->
   <agent
     id="mensagem"
     text="Você encontrou o Garfield!"
-    x="-1000"
-    y="-1000"
+    x="center"
+    y="400"
     font-size="22"
     color="lightgreen"
   />
 
-  <!-- Botão para continuar: inicialmente fora da tela -->
+  <!-- Botão de continuar (inicialmente escondido) -->
   <agent
     id="botaoContinuar"
     text="Ir para o quarto"
-    x="-1000"
-    y="-1000"
+    x="center"
+    y="460"
     font-size="30"
     color="yellow"
-    on_click="goToPage('room')"
+    on_click="goToPage('ending')"
   />
 
 </page>
