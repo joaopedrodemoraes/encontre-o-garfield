@@ -1,4 +1,4 @@
-<page id="middle" bg_image="tech-bg-lab.png" on_load="hideAgent('mensagem'); hideAgent('botaoContinuar')">
+<page id="middle" bg_image="tech-bg-lab.png">
 
   <!-- Texto de instrução -->
   <agent
@@ -10,7 +10,7 @@
     font-size="17"
   />
 
-  <!-- Opção: Guarda-roupa -->
+  <!-- Guarda-roupa (errado) -->
   <agent
     id="guarda"
     text="Guarda-roupa"
@@ -18,10 +18,10 @@
     y="220"
     font-size="25"
     color="white"
-    on_click="hideAgent('mensagem'); hideAgent('botaoContinuar')"
+    on_click=""
   />
 
-  <!-- Opção: Gavetas -->
+  <!-- Gavetas (errado) -->
   <agent
     id="gavetas"
     text="Gavetas"
@@ -29,10 +29,10 @@
     y="280"
     font-size="25"
     color="white"
-    on_click="hideAgent('mensagem'); hideAgent('botaoContinuar')"
+    on_click=""
   />
 
-  <!-- Opção correta: Debaixo da cama -->
+  <!-- Debaixo da cama (acerto) -->
   <agent
     id="cama"
     text="Debaixo da cama"
@@ -40,28 +40,16 @@
     y="340"
     font-size="25"
     color="white"
-    on_click="showAgent('mensagem'); showAgent('botaoContinuar')"
-  />
+    on_click="showAgent('mensagem'); wait(1200); goToPage('ending')" />
 
-  <!-- Mensagem (inicialmente escondida) -->
+  <!-- Mensagem temporária -->
   <agent
     id="mensagem"
-    text="Você encontrou o Garfield!"
+    text="Você encontrou o Garfield! 😺"
     x="center"
     y="400"
     font-size="22"
     color="lightgreen"
-  />
-
-  <!-- Botão de continuar (inicialmente escondido) -->
-  <agent
-    id="botaoContinuar"
-    text="Ir para o quarto"
-    x="center"
-    y="460"
-    font-size="30"
-    color="yellow"
-    on_click="goToPage('ending')"
   />
 
 </page>
