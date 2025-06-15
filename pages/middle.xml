@@ -7,39 +7,41 @@
     y="160"
     font-size="17"
     />
-   <agent
-    id="click_wardrobe"
+  <agent
+    id="guarda"
     text="Guarda-roupa"
     x="center"
-    y="200"
-    font-size="30"
+    y="220"
+    font-size="25"
     color="white"
-    on_click="showAgent('msg_wardrobe')" />
-  <agent
-    id="msg_wardrobe"
-    text="Você olhou no guarda-roupa, mas não está lá!"
-    x="center"
-    y="120"
-    font-size="24"
-    color="gray"
-    visible="false"
+    on_click="hideAgent('mensagem');"
   />
-  <agent
-    id="click_drawers"
+<agent
+    id="gavetas"
     text="Gavetas"
     x="center"
     y="280"
-    font-size="30"
+    font-size="25"
     color="white"
-    on_click="showMsg('Você remexeu nas gavetas... nada do Garfield.')" />
+    on_click="hideAgent('mensagem');"
+  />
 <agent
-    id="click_embaixo_da_cama"
+    id="cama"
     text="Debaixo da cama"
     x="center"
-    y="360"
-    font-size="30"
+    y="340"
+    font-size="25"
     color="white"
-    on_click="showMsg('Você encontrou o Garfield debaixo da cama!'); showAgent('next_page_text')" />
+    on_click="showAgent('mensagem'); showAgent('botaoContinuar')" />
+  <agent
+    id="mensagem"
+    text="Você encontrou o Garfield!"
+    x="center"
+    y="400"
+    font-size="22"
+    color="lightgreen"
+    visible="false"
+  />
 
   <agent
     id="next_page_text"
