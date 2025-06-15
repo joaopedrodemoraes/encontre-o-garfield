@@ -10,7 +10,7 @@
     font-size="17"
   />
 
-  <!-- Guarda-roupa (errado) -->
+  <!-- Opção errada: Guarda-roupa -->
   <agent
     id="guarda"
     text="Guarda-roupa"
@@ -18,10 +18,9 @@
     y="220"
     font-size="25"
     color="white"
-    on_click=""
   />
 
-  <!-- Gavetas (errado) -->
+  <!-- Opção errada: Gavetas -->
   <agent
     id="gavetas"
     text="Gavetas"
@@ -29,10 +28,9 @@
     y="280"
     font-size="25"
     color="white"
-    on_click=""
   />
 
-  <!-- Debaixo da cama (acerto) -->
+  <!-- Opção certa: Debaixo da cama -->
   <agent
     id="cama"
     text="Debaixo da cama"
@@ -40,16 +38,6 @@
     y="340"
     font-size="25"
     color="white"
-    on_click="showAgent('mensagem'); wait(1200); goToPage('ending')" />
-
-  <!-- Mensagem temporária -->
-  <agent
-    id="mensagem"
-    text="Você encontrou o Garfield! 😺"
-    x="center"
-    y="400"
-    font-size="22"
-    color="lightgreen"
-  />
+    on_click="goToPage('ending')" />
 
 </page>
