@@ -7,14 +7,23 @@
     y="160"
     font-size="17"
     />
-  <agent
-    id="click_quardaroupa"
+   <agent
+    id="click_wardrobe"
     text="Guarda-roupa"
     x="center"
     y="200"
     font-size="30"
     color="white"
-    on_click="showMsg('Você olhou no guarda-roupa, mas não está lá!')" />
+    on_click="showAgent('msg_wardrobe')" />
+  <agent
+    id="msg_wardrobe"
+    text="Você olhou no guarda-roupa, mas não está lá!"
+    x="center"
+    y="120"
+    font-size="24"
+    color="gray"
+    visible="false"
+  />
   <agent
     id="click_drawers"
     text="Gavetas"
