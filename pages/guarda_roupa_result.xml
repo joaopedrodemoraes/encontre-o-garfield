@@ -1,0 +1,3 @@
+<page id="guarda_roupa_result" bg_color="black">
+  <agent id="titulo" x="center" y="center" text="Página guarda_roupa_result" color="white" font-size="24" />
+</page>
