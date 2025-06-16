@@ -2,10 +2,12 @@
   <agent
     id="teste"
     text="Parabéns você achou o Garfield!"
-    color="white"
+    color="black"
     x="center"
     y="180"
-    font-size="20"
+    font-size="25"
+    animation=""
+    
   />
 
   <agent
