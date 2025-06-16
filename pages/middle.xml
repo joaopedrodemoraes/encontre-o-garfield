@@ -2,7 +2,7 @@
 
   <agent
     id="começo_da_procura"
-    text="Clique em lugares onde o Garfield pode estar"
+    text="Clique em lugares onde o Garfield pode estar:"
     color="white"
     x="center"
     y="160"
