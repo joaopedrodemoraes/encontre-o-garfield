@@ -30,7 +30,7 @@
     y="280"
     font-size="25"
     color="white"
-    on_click=""
+    on_click="goto"
     animation=""
   />
 
@@ -44,12 +44,6 @@
     on_click="goToPage('ending')" />
 
 </page>
-<page id="final_guarda_roupa">
-  
-
-
-
-
-
+<page id="final_guarda_roupa" bg_image="tech-bg-lab.png">
   
 </page>
