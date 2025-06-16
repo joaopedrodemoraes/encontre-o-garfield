@@ -10,7 +10,7 @@
 
   <agent
     id="next_page_text"
-    text="Primeira Pagina"
+    text="Primeira Página"
     animation="glitch"
     y="480"
     x="640"
