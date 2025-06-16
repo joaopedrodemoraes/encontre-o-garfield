@@ -17,6 +17,7 @@
     font-size="25"
     color="white"
     on_click=""
+    animation="pulse"
   />
 
   <agent
